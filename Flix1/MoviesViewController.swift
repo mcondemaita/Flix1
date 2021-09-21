@@ -17,6 +17,10 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //for movie in movies {
+            //movie.print("movies\(movie)")
+        //}
+        
         TableView.rowHeight = 150
         TableView.dataSource = self
         TableView.delegate = self

@@ -43,7 +43,7 @@ Describe any challenges encountered while building the app.
 
 ### App Walkthrough GIF
 
-##TO DO ADD EZGIT.VIDEO 
+https://submissions.us-east-1.linodeobjects.com/ios_university/8ygO13dn.gif
 
 ### Notes
 Describe any challenges encountered while building the app.

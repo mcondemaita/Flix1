@@ -16,12 +16,11 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 ### App Walkthrough GIF
 
-/Users/mariacondemaita/Desktop/Flix2.gif
+/Users/mariacondemaita/Desktop/Flix2-.gif
 
 ### Notes
 Describe any challenges encountered while building the app.
-
-📝 `NOTE - PASTE PART 2 SNIPPET HERE:` Paste the README template for part 2 of this assignment here at the top. This will show a history of your development process, which users stories you completed and how your app looked and functioned at each step.
+a lot 
 
 ---
 
@@ -40,7 +39,7 @@ Describe any challenges encountered while building the app.
 
 ### App Walkthrough GIF
 
-https://submissions.us-east-1.linodeobjects.com/ios_university/8ygO13dn.gif
+![ezgif com-optimize](https://user-images.githubusercontent.com/80352995/134409597-2cfba97d-ca53-496b-b251-4a7942bfac07.gif)
 
 ### Notes
 Describe any challenges encountered while building the app.

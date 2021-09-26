@@ -13,7 +13,6 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    
     var movies = [[String: Any]] ()
     
     override func viewDidLoad() {

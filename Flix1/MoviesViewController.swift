@@ -26,7 +26,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         TableView.delegate = self
 
         // Do any additional setup after loading the view.
-        print("Hello")
         
         let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
@@ -41,8 +40,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                 
                 self.TableView.reloadData()
                 
-                print(dataDictionary)
-
                     // TODO: Get the array of movies
                     // TODO: Store the movies in a property to use elsewhere
                     // TODO: Reload your table view data
@@ -71,7 +68,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         let baseUrl = "https://image.tmdb.org/t/p/w185"
         let imagepath = movie["poster_path"] as! String
-        
         let imageurl = URL(string: baseUrl + imagepath)
         
         cell.postcell.af.setImage(withURL: imageurl!) // ? options or ! just add it 
@@ -79,15 +75,27 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         return cell
         
     }
-
-    /*
+  
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // In a storyboard-based application, you will often want to do a little preparation before navigation - seding data
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        print("Loading up the details screen")
+        // Find the selected movies how do we know which movie was selected
+        let cell = sender as! UITableViewCell // sender is sellecting the cell 
+        let indexPath = TableView.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+
+        // Pass the selected movie to the details view controller
+        let detailsViewController = segue.destination as! // segue know where to go
+        MovieDetailsViewController
+        
+        detailsViewController.movie = movie // the 2nd movie is our movie we just find
+        
+        TableView.deselectRow(at: indexPath, animated:true)
     }
-    */
 
 }
